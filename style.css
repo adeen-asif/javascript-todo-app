@@ -1,0 +1,187 @@
+*
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+   --background: rgb(18, 18, 79);
+   --secondary-background: rgb(4, 4, 123);
+   --teal: rgb(85, 171, 171);
+   --purple: rgb(83, 14, 83);
+   --gray: rgb(122, 119, 119);
+   --text: white;
+}
+
+body
+{
+   color: var(--text);
+   background-color: var(--background);
+   /* background: linear-gradient(to left, var(--gray) , var(--background)); */
+   min-height: 100vh;
+   margin: 0;
+   padding: 10px;
+   font-family: 'Poppins', sans-serif;
+}
+
+h1
+{
+   margin-top: 20px ;
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: rgb(198, 201, 201);
+   color: rgb(16, 16, 112);
+   text-align: center;
+} 
+
+.container
+{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   max-width: 500px;
+   margin: 50px auto 0 auto;
+ 
+}
+
+.container2
+{
+   padding: 30px;
+   border-radius: 20px;
+   border: 2px solid var(--text);
+   display: flex;
+   gap: 30px;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.details
+{
+   width: 100%;
+}
+
+#numbers
+{
+   width: 80px;
+   height: 80px;
+   background-color: var(--gray);
+   border-radius: 50%;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   font-size: 30px;
+   font-weight: bold;
+}
+
+#progressBar
+{
+   width: 300px;
+   height: 8px;
+   background-color: var(--secondary-background);
+   border-radius: 5px;
+   margin-top: 20px;
+}
+
+#progress
+{
+    width: 0%;
+    height: 8px;
+    background-color: var(--text);
+    border-radius: 5px;
+    transition: all 0.3 ease;
+    box-shadow: 0 0 10px var(--text), 0 0 20px var(--text);
+}
+
+form
+{
+   margin-top: 30px;
+   width: 100%;
+   display: flex;
+   gap: 10px;
+}
+
+input
+{
+   flex: 1;
+   padding: 8px;
+   border-radius: 10px;
+   border: 2px solid var(--gray);
+   gap: 20px;
+   outline: none;
+}
+
+button
+{
+   padding:20px;
+   height: 10px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--background);
+   font-size: 20px;
+   font-weight: bold;
+   border: 2px solid var(--gray);
+}
+
+.taskItem
+{
+   display: flex;
+   background-color: var(--text);
+   justify-content: space-between;
+   align-items: center;
+   padding: 10px;
+   border-radius: 8px;
+   margin-bottom: 10px;
+   border: 1px solid #ddd;
+   margin-top: 30px;
+
+}
+
+#list
+{
+   width: 100%;
+}
+
+.task
+{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.task p 
+{
+   margin: 0;
+   font-size: 16px;
+   color: var(--background);
+   gap:10px;
+}
+
+.checkbox 
+{
+   width: 18px;
+   height: 18px;
+}
+
+.icons 
+{
+   display: flex;
+   gap: 10px;
+}
+
+.icons img 
+{
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+}
+
+.task.completed
+{
+   text-decoration: line-through;
+   color: var(--gray);
+   opacity : 0.4;
+}
